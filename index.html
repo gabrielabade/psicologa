@@ -7,24 +7,34 @@
   <title>Dra. Ana Silva | Psicóloga Clínica</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Pacifico&display=swap"
     rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Elementos decorativos de fundo -->
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+  <div class="bg-shape bg-shape-3"></div>
+
   <!-- WHATSAPP BUTTON -->
   <a href="https://wa.me/5511999999999" class="whatsapp-button" target="_blank"
     aria-label="Entre em contato pelo WhatsApp">
     <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Agende sua consulta</span>
   </a>
 
   <!-- HEADER -->
   <header class="header">
     <div class="container nav-container">
-      <a href="#" class="logo">Dra. <span>Ana Silva</span></a>
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo Dra. Ana Silva" class="logo-img">
+      </a>
       <div class="mobile-toggle">
-        <i class="fas fa-bars"></i>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <ul class="nav-links">
         <li><a href="#home" class="active">Início</a></li>
@@ -33,7 +43,7 @@
         <li><a href="#approach">Abordagem</a></li>
         <li><a href="#testimonials">Depoimentos</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <li><a href="#contact" class="nav-cta">Agendar</a></li>
       </ul>
     </div>
   </header>
@@ -41,40 +51,91 @@
   <!-- HERO SECTION -->
   <section id="home" class="hero">
     <div class="container">
-      <div class="hero-content">
-        <h1>Transforme sua vida com apoio psicológico especializado</h1>
-        <p>Olá, sou a Dra. Ana Silva. Ajudo pessoas a superarem desafios emocionais e desenvolverem uma melhor relação
-          consigo mesmas através de atendimento psicológico humanizado.</p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn">Agende uma Consulta</a>
-          <a href="#about" class="btn btn-secondary">Conheça meu Trabalho</a>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="subtitle">Psicóloga Clínica</span>
+          <h1>Transforme sua vida com apoio psicológico especializado</h1>
+          <p>Olá, sou a Dra. Ana Silva. Ajudo pessoas a superarem desafios emocionais e desenvolverem uma melhor relação
+            consigo mesmas através de atendimento psicológico humanizado.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <span>Agende uma Consulta</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <span>Conheça meu Trabalho</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-text">Anos de Experiência</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3500+</span>
+              <span class="stat-text">Pacientes Atendidos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">4.9</span>
+              <span class="stat-text">Avaliação Média</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <img src="psicologa-retrato.png" alt="Dra. Ana Silva - Psicóloga" class="hero-image">
+          <div class="hero-image-accent"></div>
         </div>
       </div>
     </div>
-    <img src="https://via.placeholder.com/600x800" alt="Dra. Ana Silva - Psicóloga" class="hero-image">
   </section>
 
   <!-- SOBRE MIM -->
   <section id="about" class="section">
     <div class="container">
       <div class="about">
-        <img src="https://via.placeholder.com/600x600" alt="Dra. Ana Silva - Psicóloga" class="about-image">
+        <div class="about-image-container">
+          <img src="psicologa-sobre.png" alt="Dra. Ana Silva - Psicóloga" class="about-image">
+          <div class="about-image-accent"></div>
+          <div class="experience-badge">
+            <span class="exp-number">10</span>
+            <span class="exp-text">Anos de<br>Experiência</span>
+          </div>
+        </div>
         <div class="about-content">
           <span class="subtitle">Sobre Mim</span>
           <h2>Uma abordagem humanizada para seu bem-estar mental</h2>
-          <p>Sou psicóloga clínica com mais de 10 anos de experiência, especializada em terapia
-            cognitivo-comportamental. Minha missão é proporcionar um espaço seguro e acolhedor onde você possa explorar
-            seus pensamentos e emoções sem julgamentos.</p>
-          <p>Acredito que cada pessoa é única e merece um atendimento personalizado. Trabalho em parceria com meus
-            pacientes para desenvolver estratégias eficazes que promovam o autoconhecimento e a saúde mental.</p>
-          <p>Formação:</p>
-          <ul>
-            <li>Graduação em Psicologia - Universidade de São Paulo (USP)</li>
-            <li>Mestrado em Psicologia Clínica - PUC-SP</li>
-            <li>Especialização em Terapia Cognitivo-Comportamental</li>
-            <li>Formação em Mindfulness para Psicólogos</li>
-          </ul>
-          <a href="#contact" class="btn" style="margin-top: var(--spacing-md);">Agende uma Consulta</a>
+          <p class="highlight-text">Acredito que a terapia deve ser um espaço seguro onde você possa ser autêntico e
+            trabalhar suas questões sem julgamentos.</p>
+          <p>Sou psicóloga clínica especializada em terapia cognitivo-comportamental. Minha missão é proporcionar um
+            espaço seguro e acolhedor para exploração de pensamentos e emoções, ajudando você a desenvolver estratégias
+            eficazes para uma vida mais equilibrada.</p>
+          <div class="qualification-grid">
+            <div class="qualification-item">
+              <div class="qualification-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="qualification-text">
+                <h4>Formação Acadêmica</h4>
+                <ul>
+                  <li>Graduação em Psicologia - USP</li>
+                  <li>Mestrado em Psicologia Clínica</li>
+                </ul>
+              </div>
+            </div>
+            <div class="qualification-item">
+              <div class="qualification-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="qualification-text">
+                <h4>Especializações</h4>
+                <ul>
+                  <li>Terapia Cognitivo-Comportamental</li>
+                  <li>Mindfulness para Psicólogos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Vamos Conversar</a>
         </div>
       </div>
     </div>
@@ -86,56 +147,64 @@
       <div class="text-center">
         <span class="subtitle">Meus Serviços</span>
         <h2>Como posso ajudar você</h2>
-        <p>Ofereço diversos serviços personalizados para atender às suas necessidades específicas.</p>
+        <p class="section-intro">Ofereço diversos serviços personalizados para atender às suas necessidades específicas
+          e ajudar você a alcançar maior bem-estar emocional.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
           <div class="service-icon">
             <i class="fas fa-user"></i>
           </div>
           <h3>Terapia Individual</h3>
-          <p>Sessões individuais para ajudar você a lidar com questões como ansiedade, depressão, estresse, problemas de
-            relacionamento e mais.</p>
+          <p>Sessões personalizadas para ajudar você a lidar com questões como ansiedade, depressão, estresse e
+            problemas de relacionamento.</p>
+          <a href="#contact" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="service-card">
+        <div class="service-card featured animate-on-scroll">
           <div class="service-icon">
             <i class="fas fa-users"></i>
           </div>
+          <div class="service-badge">Popular</div>
           <h3>Terapia de Casal</h3>
           <p>Auxílio para casais que enfrentam dificuldades de comunicação, conflitos recorrentes ou que desejam
             fortalecer seu relacionamento.</p>
+          <a href="#contact" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
           <div class="service-icon">
             <i class="fas fa-seedling"></i>
           </div>
           <h3>Autodesenvolvimento</h3>
           <p>Orientação para quem busca crescimento pessoal, autoconhecimento e desenvolvimento de habilidades
             emocionais.</p>
+          <a href="#contact" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
           <div class="service-icon">
             <i class="fas fa-briefcase"></i>
           </div>
           <h3>Coaching de Carreira</h3>
           <p>Suporte para quem está enfrentando desafios profissionais, buscando recolocação ou desenvolvimento na
             carreira.</p>
+          <a href="#contact" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
           <div class="service-icon">
             <i class="fas fa-brain"></i>
           </div>
           <h3>Mindfulness</h3>
           <p>Prática de atenção plena para redução de estresse, ansiedade e desenvolvimento de maior consciência no
             momento presente.</p>
+          <a href="#contact" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
           <div class="service-icon">
             <i class="fas fa-video"></i>
           </div>
           <h3>Atendimento Online</h3>
           <p>Sessões remotas com a mesma qualidade do atendimento presencial, proporcionando flexibilidade e comodidade.
           </p>
+          <a href="#contact" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -147,44 +216,62 @@
       <div class="text-center">
         <span class="subtitle">Minha Abordagem</span>
         <h2>Como funciona o processo terapêutico</h2>
-        <p>Conheça as etapas do meu método de trabalho para ajudar você a alcançar seus objetivos.</p>
+        <p class="section-intro">Conheça as etapas do meu método de trabalho para ajudar você a alcançar seus objetivos
+          e desenvolver uma vida mais equilibrada.</p>
       </div>
-      <div class="approach-container">
-        <div class="approach-item">
+      <div class="approach-timeline">
+        <div class="approach-item animate-on-scroll">
           <div class="approach-number">01</div>
-          <h3>Acolhimento</h3>
-          <p>O primeiro passo é criar um espaço seguro onde você possa se expressar livremente, sem medo de julgamentos.
-          </p>
+          <div class="approach-content">
+            <h3>Acolhimento</h3>
+            <p>O primeiro passo é criar um espaço seguro onde você possa se expressar livremente, sem medo de
+              julgamentos.</p>
+          </div>
         </div>
-        <div class="approach-item">
+        <div class="approach-item animate-on-scroll">
           <div class="approach-number">02</div>
-          <h3>Avaliação</h3>
-          <p>Identificamos juntos os desafios que você está enfrentando e estabelecemos os objetivos do processo
-            terapêutico.</p>
+          <div class="approach-content">
+            <h3>Avaliação</h3>
+            <p>Identificamos juntos os desafios que você está enfrentando e estabelecemos os objetivos do processo
+              terapêutico.</p>
+          </div>
         </div>
-        <div class="approach-item">
+        <div class="approach-item animate-on-scroll">
           <div class="approach-number">03</div>
-          <h3>Intervenção</h3>
-          <p>Desenvolvemos estratégias personalizadas para ajudar você a superar obstáculos e desenvolver novas
-            habilidades.</p>
+          <div class="approach-content">
+            <h3>Intervenção</h3>
+            <p>Desenvolvemos estratégias personalizadas para ajudar você a superar obstáculos e desenvolver novas
+              habilidades.</p>
+          </div>
         </div>
-        <div class="approach-item">
+        <div class="approach-item animate-on-scroll">
           <div class="approach-number">04</div>
-          <h3>Prática</h3>
-          <p>Você aplica as técnicas aprendidas no seu dia a dia, observando os resultados e ajustando quando
-            necessário.</p>
+          <div class="approach-content">
+            <h3>Prática</h3>
+            <p>Você aplica as técnicas aprendidas no seu dia a dia, observando os resultados e ajustando quando
+              necessário.</p>
+          </div>
         </div>
-        <div class="approach-item">
+        <div class="approach-item animate-on-scroll">
           <div class="approach-number">05</div>
-          <h3>Evolução</h3>
-          <p>Revisamos regularmente seu progresso, celebrando conquistas e redefinindo objetivos quando necessário.</p>
+          <div class="approach-content">
+            <h3>Evolução</h3>
+            <p>Revisamos regularmente seu progresso, celebrando conquistas e redefinindo objetivos quando necessário.
+            </p>
+          </div>
         </div>
-        <div class="approach-item">
+        <div class="approach-item animate-on-scroll">
           <div class="approach-number">06</div>
-          <h3>Autonomia</h3>
-          <p>O objetivo final é que você desenvolva as ferramentas necessárias para lidar com desafios futuros de forma
-            independente.</p>
+          <div class="approach-content">
+            <h3>Autonomia</h3>
+            <p>O objetivo final é que você desenvolva as ferramentas necessárias para lidar com desafios futuros de
+              forma independente.</p>
+          </div>
         </div>
+      </div>
+      <div class="approach-cta text-center">
+        <p>Pronto para começar sua jornada de transformação?</p>
+        <a href="#contact" class="btn btn-primary">Agende sua Primeira Sessão</a>
       </div>
     </div>
   </section>
@@ -195,17 +282,33 @@
       <div class="text-center">
         <span class="subtitle">Depoimentos</span>
         <h2>O que meus pacientes dizem</h2>
-        <p>Histórias reais de transformação e crescimento.</p>
+        <p class="section-intro">Histórias reais de transformação e crescimento que demonstram o impacto positivo da
+          terapia.</p>
       </div>
       <div class="testimonials-container">
+        <div class="testimonials-controls">
+          <button class="testimonial-arrow prev-arrow">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="testimonial-arrow next-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
         <div class="testimonials-track">
           <div class="testimonial">
-            <div class="testimonial-card">
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
               <p class="testimonial-text">A terapia com a Dra. Ana mudou completamente minha vida. Depois de anos
                 lutando contra a ansiedade, finalmente aprendi a gerenciar meus pensamentos e emoções. O ambiente
                 acolhedor que ela cria faz toda a diferença.</p>
               <div class="testimonial-author">
-                <img src="https://via.placeholder.com/100" alt="Mariana C.">
+                <img src="depoimento-1.png" alt="Mariana C.">
                 <div>
                   <h4>Mariana C.</h4>
                   <p>Paciente há 1 ano</p>
@@ -214,12 +317,19 @@
             </div>
           </div>
           <div class="testimonial">
-            <div class="testimonial-card">
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
               <p class="testimonial-text">Procurei a Dra. Ana em um momento de crise no meu relacionamento. As sessões
                 de terapia de casal nos ajudaram a melhorar nossa comunicação e a resolver conflitos de forma saudável.
                 Hoje, nosso relacionamento está mais forte do que nunca.</p>
               <div class="testimonial-author">
-                <img src="https://via.placeholder.com/100" alt="Ricardo e Paula">
+                <img src="depoimento-2.png" alt="Ricardo e Paula">
                 <div>
                   <h4>Ricardo e Paula</h4>
                   <p>Terapia de casal</p>
@@ -228,12 +338,19 @@
             </div>
           </div>
           <div class="testimonial">
-            <div class="testimonial-card">
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
               <p class="testimonial-text">As sessões online com a Dra. Ana foram fundamentais durante a pandemia. Mesmo
                 à distância, ela conseguiu me ajudar a superar um período difícil de depressão. Sua abordagem é prática
                 e ao mesmo tempo sensível às necessidades individuais de cada paciente.</p>
               <div class="testimonial-author">
-                <img src="https://via.placeholder.com/100" alt="Carlos M.">
+                <img src="depoimento-3.png" alt="Carlos M.">
                 <div>
                   <h4>Carlos M.</h4>
                   <p>Atendimento online</p>
@@ -242,10 +359,10 @@
             </div>
           </div>
         </div>
-        <div class="testimonial-controls">
-          <div class="testimonial-dot active"></div>
-          <div class="testimonial-dot"></div>
-          <div class="testimonial-dot"></div>
+        <div class="testimonial-indicators">
+          <span class="testimonial-dot active"></span>
+          <span class="testimonial-dot"></span>
+          <span class="testimonial-dot"></span>
         </div>
       </div>
     </div>
@@ -257,34 +374,47 @@
       <div class="text-center">
         <span class="subtitle">Perguntas Frequentes</span>
         <h2>Dúvidas comuns sobre terapia</h2>
-        <p>Encontre respostas para as perguntas mais frequentes sobre o processo terapêutico.</p>
+        <p class="section-intro">Encontre respostas para as perguntas mais frequentes sobre o processo terapêutico e
+          como ele pode ajudar você.</p>
       </div>
-      <div class="faq-container">
-        <div class="faq-item">
-          <div class="faq-question">Quanto tempo dura uma sessão de terapia?</div>
+      <div class="faq-grid">
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <span>Quanto tempo dura uma sessão de terapia?</span>
+            <i class="fas fa-plus"></i>
+          </div>
           <div class="faq-answer">
             <p>As sessões de terapia individual e de casal geralmente duram 50 minutos. Este tempo é estabelecido para
               proporcionar um espaço adequado para o trabalho terapêutico, mantendo o foco e a eficácia do processo.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <div class="faq-question">Com que frequência devo fazer terapia?</div>
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <span>Com que frequência devo fazer terapia?</span>
+            <i class="fas fa-plus"></i>
+          </div>
           <div class="faq-answer">
             <p>O mais comum é realizar sessões semanais, especialmente no início do processo terapêutico. À medida que
               você progride, a frequência pode ser ajustada para quinzenal ou mensal, dependendo das suas necessidades e
               objetivos. Definiremos juntos o melhor cronograma para o seu caso.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <div class="faq-question">Por quanto tempo precisarei fazer terapia?</div>
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <span>Por quanto tempo precisarei fazer terapia?</span>
+            <i class="fas fa-plus"></i>
+          </div>
           <div class="faq-answer">
             <p>A duração do processo terapêutico varia de pessoa para pessoa. Alguns benefícios podem ser percebidos já
               nas primeiras sessões, enquanto mudanças mais profundas geralmente requerem um tempo maior. Regularmente
               revisamos seu progresso e discutimos a continuidade do tratamento.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <div class="faq-question">A terapia online é tão eficaz quanto a presencial?</div>
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <span>A terapia online é tão eficaz quanto a presencial?</span>
+            <i class="fas fa-plus"></i>
+          </div>
           <div class="faq-answer">
             <p>Sim, estudos mostram que a terapia online pode ser tão eficaz quanto a presencial para muitas situações.
               Oferece vantagens como comodidade, economia de tempo com deslocamentos e a possibilidade de fazer sessões
@@ -292,16 +422,22 @@
               necessidades.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <div class="faq-question">Como sei se a terapia está funcionando para mim?</div>
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <span>Como sei se a terapia está funcionando para mim?</span>
+            <i class="fas fa-plus"></i>
+          </div>
           <div class="faq-answer">
             <p>Você pode perceber melhorias na forma como lida com situações desafiadoras, maior clareza sobre seus
               pensamentos e emoções, melhorias nos relacionamentos, ou mudanças em comportamentos que antes lhe causavam
               sofrimento. Durante o processo, fazemos avaliações regulares do seu progresso.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <div class="faq-question">A terapia é confidencial?</div>
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <span>A terapia é confidencial?</span>
+            <i class="fas fa-plus"></i>
+          </div>
           <div class="faq-answer">
             <p>Absolutamente. A confidencialidade é um princípio fundamental da psicoterapia. Tudo o que é discutido nas
               sessões permanece entre nós, salvo em situações específicas previstas por lei, como risco de vida para
@@ -318,16 +454,19 @@
       <div class="text-center">
         <span class="subtitle">Entre em Contato</span>
         <h2>Estou aqui para ajudar você</h2>
-        <p>Dê o primeiro passo em direção ao seu bem-estar.</p>
+        <p class="section-intro">Dê o primeiro passo em direção ao seu bem-estar emocional e marque sua consulta hoje.
+        </p>
       </div>
-      <div class="contact-grid">
+      <div class="contact-card animate-on-scroll">
         <div class="contact-info">
+          <h3>Informações de Contato</h3>
+          <p>Preencha o formulário ou entre em contato diretamente pelos canais abaixo:</p>
           <div class="contact-item">
             <div class="contact-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <div>
-              <h3>Localização</h3>
+              <h4>Localização</h4>
               <p>Av. Paulista, 1000, Conjunto 101<br>Bela Vista, São Paulo - SP</p>
             </div>
           </div>
@@ -336,7 +475,7 @@
               <i class="fas fa-phone-alt"></i>
             </div>
             <div>
-              <h3>Telefone</h3>
+              <h4>Telefone</h4>
               <p>(11) 99999-9999</p>
             </div>
           </div>
@@ -345,7 +484,7 @@
               <i class="fas fa-envelope"></i>
             </div>
             <div>
-              <h3>E-mail</h3>
+              <h4>E-mail</h4>
               <p>contato@draanasilva.com.br</p>
             </div>
           </div>
@@ -354,40 +493,59 @@
               <i class="fas fa-clock"></i>
             </div>
             <div>
-              <h3>Horário de Atendimento</h3>
+              <h4>Horário de Atendimento</h4>
               <p>Segunda a Sexta: 8h às 20h<br>Sábado: 9h às 14h</p>
             </div>
           </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
         <form class="contact-form">
-          <div class="form-group">
-            <label for="name">Nome Completo</label>
-            <input type="text" id="name" class="form-control" required>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input type="text" id="name" class="form-control" required placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" class="form-control" required placeholder="seu.email@exemplo.com">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Telefone</label>
-            <input type="tel" id="phone" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="service">Serviço de Interesse</label>
-            <select id="service" class="form-control" required>
-              <option value="">Selecione uma opção</option>
-              <option value="individual">Terapia Individual</option>
-              <option value="couple">Terapia de Casal</option>
-              <option value="development">Autodesenvolvimento</option>
-              <option value="career">Coaching de Carreira</option>
-              <option value="mindfulness">Mindfulness</option>
-            </select>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" class="form-control" required placeholder="(11) 99999-9999">
+            </div>
+            <div class="form-group">
+              <label for="service">Serviço de Interesse</label>
+              <select id="service" class="form-control" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="individual">Terapia Individual</option>
+                <option value="couple">Terapia de Casal</option>
+                <option value="development">Autodesenvolvimento</option>
+                <option value="career">Coaching de Carreira</option>
+                <option value="mindfulness">Mindfulness</option>
+                <option value="online">Atendimento Online</option>
+              </select>
+            </div>
           </div>
           <div class="form-group">
             <label for="message">Mensagem</label>
-            <textarea id="message" class="form-control" required></textarea>
+            <textarea id="message" class="form-control" required
+              placeholder="Descreva brevemente o motivo do seu contato..."></textarea>
           </div>
-          <button type="submit" class="btn">Enviar Mensagem</button>
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">Li e concordo com a <a href="#">Política de Privacidade</a>.</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Enviar Mensagem</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
         </form>
       </div>
     </div>
@@ -396,20 +554,16 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo">Dra. <span>Ana Silva</span></div>
-          <p>Psicóloga clínica especializada em ajudar pessoas a superarem desafios emocionais e desenvolverem uma
-            relação mais saudável consigo mesmas.</p>
-          <p>CRP: xx/xxxxxx</p>
-          <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="logo.png" alt="Logo Dra. Ana Silva" class="footer-logo-img">
           </div>
+          <p>Psicóloga clínica especializada em ajudar pessoas a superarem desafios emocionais e desenvolverem uma relação
+            mais saudável consigo mesmas.</p>
+          <p class="crp">CRP: xx/xxxxxx</p>
         </div>
-        <div>
+        <div class="footer-col">
           <h4>Links Rápidos</h4>
           <ul class="footer-links">
             <li><a href="#home">Início</a></li>
@@ -421,22 +575,34 @@
             <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div>
+        <div class="footer-col">
           <h4>Recursos</h4>
           <ul class="footer-links">
             <li><a href="#">Blog</a></li>
             <li><a href="#">Artigos</a></li>
             <li><a href="#">E-books</a></li>
             <li><a href="#">Meditações Guiadas</a></li>
-            <li><a href="#">Políticas de Privacidade</a></li>
-            <li><a href="#">Termos de Uso</a></li>
           </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Receba dicas de bem-estar e saúde mental diretamente no seu email.</p>
+          <form class="footer-subscribe">
+            <input type="email" placeholder="Seu melhor email" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Dra. Ana Silva - Psicóloga. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Dra. Ana Silva - Psicóloga. Todos os direitos reservados. | Desenvolvido por <a
+            href="https://gbconnect.digital" target="_blank">GBConnect.digital</a></p>
+        <div class="footer-legal">
+          <a href="#">Políticas de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
       </div>
     </div>
+    <div class="footer-shape"></div>
   </footer>
 
   <script src="script.js"></script>
