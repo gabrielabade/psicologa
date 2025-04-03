@@ -623,13 +623,88 @@ function initFormValidation() {
 
         // Remover erro após 2 segundos
         setTimeout(() => {
-                    emailInput.classList.remove('error');
-                  }, 2000);
-                } else {
-                  // Simular envio bem-sucedido
-                  emailInput.value = '';
-                  alert('Inscrição realizada com sucesso!');
-                }
-              });
-            }
-          }
+          emailInput.classList.remove('error');
+        }, 2000);
+      } else {
+        // Simular envio bem-sucedido
+        emailInput.value = '';
+        alert('Inscrição realizada com sucesso!');
+      }
+    });
+  }
+}
+
+// Animações ao rolar - para elementos aparecerem gradualmente
+function initAnimations() {
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+  // Função para verificar se um elemento está visível na tela
+  function checkIfInView() {
+    animatedElements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementBottom = element.getBoundingClientRect().bottom;
+      const isVisible = (elementTop < window.innerHeight - 100) && (elementBottom > 0);
+
+      if (isVisible) {
+        element.classList.add('visible');
+      }
+    });
+  }
+
+  // Verificar elementos ao carregar a página
+  checkIfInView();
+
+  // Verificar elementos ao rolar a página
+  window.addEventListener('scroll', checkIfInView, { passive: true });
+}
+
+// Função para melhorar a experiência de carregamento da página
+function initPageLoading() {
+  const pageLoading = document.createElement('div');
+  pageLoading.className = 'page-loading';
+
+  const logo = document.createElement('img');
+  logo.src = 'logo.png';
+  logo.alt = 'Logo Carregando';
+  logo.className = 'loading-icon';
+
+  const loadingText = document.createElement('div');
+  loadingText.className = 'loading-text';
+  loadingText.textContent = 'CARREGANDO...';
+
+  pageLoading.appendChild(logo);
+  pageLoading.appendChild(loadingText);
+  document.body.appendChild(pageLoading);
+
+  // Remover tela de carregamento após conteúdo estar pronto
+  window.addEventListener('load', function () {
+    setTimeout(() => {
+      pageLoading.classList.add('loaded');
+      setTimeout(() => {
+        pageLoading.remove();
+      }, 800);
+    }, 500);
+  });
+}
+
+// Função para melhorias de acessibilidade
+function initAccessibility() {
+  // Adicionar skip link para acessibilidade
+  const skipLink = document.createElement('a');
+  skipLink.href = '#content';
+  skipLink.className = 'skip-link';
+  skipLink.textContent = 'Pular para o conteúdo';
+  document.body.insertBefore(skipLink, document.body.firstChild);
+
+  // Melhorar acessibilidade de formulários
+  const formLabels = document.querySelectorAll('form label');
+  formLabels.forEach(label => {
+    const forAttr = label.getAttribute('for');
+    if (forAttr) {
+      const input = document.getElementById(forAttr);
+      if (input && !input.getAttribute('aria-labelledby')) {
+        input.setAttribute('aria-labelledby', forAttr);
+      }
+    }
+  });
+}
