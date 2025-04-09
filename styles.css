@@ -3046,3 +3046,9 @@ h6 {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 768px) {
+  .testimonials-controls {
+    display: none;
+  }
+}
